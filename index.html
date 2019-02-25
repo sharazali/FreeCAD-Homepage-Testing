@@ -2,37 +2,95 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="FreeCAD, the open source parametric modeler">
+		<meta name="keywords" content="FreeCAD, Open Source, Parametric Modeler, CAD">
+
+    <title>FreeCAD: Your own 3D parametric modeler</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-4.2.1.min.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <title>Hello, world!</title>
   </head>
 
   <body>
-    <div id="main" class="container-fluid">
-      <div id="section-cover">
-        <div class="section row">
-          <div class="col-lg-7">
-            <h1 id="home-title">FreeCAD</h1>
-            <h2 id="home-subtitle">Your own 3D parametric modeler</h2>
-            <a id="btn-download" class="btn btn-primary" role="button" href="downloads.html">
-              Download now
-            </a>
-            <a id="btn-features" class="btn btn-primary" role="button" 
-            href="https://www.youtube.com/watch?v=7iLOaL9z59k">
-              See what's new in 0.17
-            </a>
-          </div>
+  	<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+			<a class="navbar-brand" href="index.html">
+				<img class="img-fluid" src="svg/logo-freecad.svg" alt="FreeCAD Logo">
+			</a>
 
-          <div class="col-lg-5 d-none d-lg-block">
-            <img class="img-fluid" src="images/cover-photo.png" alt="Cover Photo">
-          </div>
+			<ul class="nav nav-pills ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						<img src="lang/en/flag.jpg"/>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="/?lang=af"><img src="lang/af/flag.jpg"/>Afrikaans</a>
+						<a class="dropdown-item" href="/?lang=zh_CN"><img src="lang/zh_CN/flag.jpg"/>Chinese Simplified</a>
+						<a class="dropdown-item" href="/?lang=zh_TW"><img src="lang/zh_TW/flag.jpg"/>Chinese Traditional</a>
+						<a class="dropdown-item" href="/?lang=hr"><img src="lang/hr/flag.jpg"/>Croatian</a>
+						<a class="dropdown-item" href="/?lang=cs"><img src="lang/cs/flag.jpg"/>Czech</a>
+						<a class="dropdown-item" href="/?lang=nl"><img src="lang/nl/flag.jpg"/>Dutch</a>
+						<a class="dropdown-item" href="/"><img src="lang/en/flag.jpg"/>English</a>
+						<a class="dropdown-item" href="/?lang=fi"><img src="lang/fi/flag.jpg"/>Finnish</a>
+						<a class="dropdown-item" href="/?lang=fr"><img src="lang/fr/flag.jpg"/>French</a>
+						<a class="dropdown-item" href="/?lang=de"><img src="lang/de/flag.jpg"/>German</a>
+						<a class="dropdown-item" href="/?lang=hu"><img src="lang/hu/flag.jpg"/>Hungarian</a>
+						<a class="dropdown-item" href="/?lang=ja"><img src="lang/ja/flag.jpg"/>Japanese</a>
+						<a class="dropdown-item" href="/?lang=no"><img src="lang/no/flag.jpg"/>Norwegian</a>
+						<a class="dropdown-item" href="/?lang=pl"><img src="lang/pl/flag.jpg"/>Polish</a>
+						<a class="dropdown-item" href="/?lang=pt_PT"><img src="lang/pt_PT/flag.jpg"/>Portuguese</a>
+						<a class="dropdown-item" href="/?lang=ro"><img src="lang/ro/flag.jpg"/>Romanian</a>
+						<a class="dropdown-item" href="/?lang=ru"><img src="lang/ru/flag.jpg"/>Russian</a>
+						<a class="dropdown-item" href="/?lang=sr"><img src="lang/sr/flag.jpg"/>Serbian (Cyrillic)</a>
+						<a class="dropdown-item" href="/?lang=es_ES"><img src="lang/es_ES/flag.jpg"/>Spanish</a>
+						<a class="dropdown-item" href="/?lang=sv_SE"><img src="lang/sv_SE/flag.jpg"/>Swedish</a>
+						<a class="dropdown-item" href="/?lang=uk"><img src="lang/uk/flag.jpg"/>Ukrainian</a>
+						<a class="dropdown-item" href="/?lang=it"><img src="lang/it/flag.jpg"/>Italian</a>
+						<!-- <a class="dropdown-item" href="/?lang=pt_BR"><img src="lang/pt_BR/flag.jpg"/>Portuguese, Brazilian</a> -->
+						<a class="dropdown-item" href="/?lang=el"><img src="lang/el/flag.jpg"/>Greek</a>
+						<a class="dropdown-item" href="/?lang=sk"><img src="lang/sk/flag.jpg"/>Slovak</a>
+						<a class="dropdown-item" href="/?lang=tr"><img src="lang/tr/flag.jpg"/>Turkish</a>
+						<a class="dropdown-item" href="/?lang=sl"><img src="lang/sl/flag.jpg"/>Slovenian</a>
+					</div>
+				</li>
+			</ul>
+
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+			aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="nav nav-pills ml-auto">
+					<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Feature_list">Features</a></li>
+					<li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Getting_started">Documentation</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/">Forum</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/FreeCAD/FreeCAD/">Contribute</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a></li>
+				</ul>
+			</div>
+		</nav>
+
+    <div id="main" class="container-fluid">
+      <div id="section-cover" class="row">
+        <div class="col-lg-7">
+          <h1 id="home-title">FreeCAD</h1>
+          <h2 id="home-subtitle">Your own 3D parametric modeler</h2>
+          <a id="btn-download" class="btn btn-light w-100" role="button" href="downloads.html">Download now</a>
+          <a id="btn-features" class="btn btn-outline-light w-100" role="button" href="https://www.youtube.com/watch?v=7iLOaL9z59k">See what's new in 0.17</a>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block">
+          <img class="img-fluid" src="images/cover-photo.png" alt="Cover Photo">
         </div>
 
         <img id="floating-arrow" src="svg/icon-down.svg">
@@ -116,7 +174,7 @@
           <div class="card">
             <img src="images/screenshot-06.jpg" class="card-img-top" alt="Screenshot 6">
             <div class="card-body">
-              <h5 class="card-title">Want to contribute to FreeCAD?</h5>
+              <h5 class="card-title">Contribute to FreeCAD</h5>
               <p class="card-text">
                 FreeCAD is a truly open source project and if you would like to help 
                 fix bugs, implement new cool features or work on the documentation, 
@@ -127,8 +185,52 @@
           </div>
         </div>
       </div>
-      
     </div>
+
+    <footer class="container-fluid footer-custom">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 footer-links">
+					<h6>Community</h6>
+					<ul>
+						<li><a href="https://github.com/FreeCAD/FreeCAD">Github</a></li>
+						<li><a href="https://www.facebook.com/FreeCAD">Facebook</a></li>
+						<li><a href="https://plus.google.com/u/0/communities/103183769032333474646">Google+</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-sm-6 footer-links">
+					<h6>Learn</h6>
+					<ul>
+						<li><a href="https://www.freecadweb.org/wiki/Tutorials">Tutorials</a></li>
+						<li><a href="https://www.youtube.com/results?search_query=freecad">Youtube Videos</a></li>
+						<li><a href="https://stackexchange.com/search?q=freecad">Stack Exchange</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-sm-6 footer-links">
+					<h6>Contribute</h6>
+					<ul>
+						<li><a href="https://www.freecadweb.org/wiki/Help_FreeCAD">How can I help?</a></li>
+						<li><a href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
+						<li><a href="https://crowdin.com/project/freecad">Translate</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-sm-6 footer-links">
+					<h6>Code</h6>
+					<ul>
+						<li><a href="https://www.freecadweb.org/wiki/Compiling">Building from source</a></li>
+						<li><a href="https://www.freecadweb.org/api/">C++ & Python API</a></li>
+						<li><a href="https://www.freecadweb.org/wiki/Licence">License information</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<span>
+				© The FreeCAD Team. Homepage image credits (top to bottom): ppemawm, r-frank, 
+				epileftric, regis, rider_mortagnais, bejant.
+			</span>
+		</footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
